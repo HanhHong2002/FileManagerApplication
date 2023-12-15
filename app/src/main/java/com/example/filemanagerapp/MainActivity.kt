@@ -340,7 +340,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         try {
-            deleteRecursive(fileOrDirectory)
+            fileOrDirectory.delete()
             displayFiles(currentDirectory)
         } catch (e: Exception) {
             e.printStackTrace()
